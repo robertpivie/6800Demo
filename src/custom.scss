@@ -1,0 +1,45 @@
+@font-face {
+  font-family: "proximanova";
+  src: local("proximanova"), url(./fonts/proximanova.ttf) format("truetype");
+}
+// @font-face {
+//   font-family: "freeland";
+//   src: local("freeland"), url(./fonts/freeland) format("truetype");
+// }
+// @font-face {
+//   font-family: "verlaglight";
+//   src: local("verlaglight"), url(./fonts/verlaglight.tff) format("truetype");
+// }
+
+$blue: #004f71;
+$indigo: #440099;
+$purple: #bb29bb;
+$pink: #e10098;
+$red: color(red);
+$orange: #ff5e00;
+$yellow: #ffd700;
+$green: #c4d600;
+$teal: #00b5e2;
+$cyan: #74c4d6;
+// $white: color(white);
+$gray: #bbbcbc;
+$gray-dark: #63666a;
+
+$primary: #bb29bb;
+$secondary: #63666a;
+$success: #c4d600;
+$info: #00b5e2;
+$warning: #ffd700;
+$danger: #ff5e00;
+// $light: color(white);
+$dark: #272525;
+
+$breakpoint-xs: 0;
+$breakpoint-sm: 576px;
+$breakpoint-md: 768px;
+$breakpoint-lg: 992px;
+$breakpoint-xl: 1200px;
+
+// $font-family-sans-serif: "proximanova";
+
+@import "~bootstrap/scss/bootstrap.scss";
