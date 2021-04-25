@@ -17,7 +17,7 @@ function Landing() {
     <Container>
       <Row>
         <Col xs={12}>
-          <Button variant="primary" block>
+          <Button href="/delivery" variant="outline-danger" block>
             <h4>Delivery</h4>
             <FontAwesomeIcon size="4x" icon={faShippingFast} />
           </Button>
@@ -26,7 +26,7 @@ function Landing() {
       <br />
       <Row>
         <Col xs={12}>
-          <Button variant="info" block>
+          <Button href="/service" variant="outline-warning" block>
             <h4>Service</h4>
             <FontAwesomeIcon size="4x" icon={faHeadset} />
           </Button>
@@ -35,7 +35,7 @@ function Landing() {
       <br />
       <Row>
         <Col xs={12}>
-          <Button variant="secondary" disabled block>
+          <Button href="/sales" variant="outline-success" block>
             <h4>Sales</h4>
             <FontAwesomeIcon size="4x" icon={faMoneyBill} />
           </Button>
@@ -44,7 +44,7 @@ function Landing() {
       <br />
       <Row>
         <Col xs={12}>
-          <Button variant="secondary" disabled block>
+          <Button href="/training" variant="outline-primary" block>
             <h4>Training</h4>
             <FontAwesomeIcon size="4x" icon={faChalkboardTeacher} />
           </Button>
@@ -53,7 +53,7 @@ function Landing() {
       <br />
       <Row>
         <Col xs={12}>
-          <Button variant="danger" block>
+          <Button href="/influence" variant="outline-info" block>
             <h4>Influence</h4>
             <FontAwesomeIcon size="4x" icon={faTv} />
           </Button>
