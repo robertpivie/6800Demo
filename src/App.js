@@ -52,6 +52,8 @@ function App() {
                 <Interests />
               </Route>
               <Route exact path="/landing">
+                <h1>Let's Get to Work!</h1>
+                <br />
                 <Landing />
               </Route>
               <Route exact path="/delivery">
