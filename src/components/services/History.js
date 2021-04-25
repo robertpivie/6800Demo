@@ -30,7 +30,7 @@ function History() {
       },
       {
         type: "column",
-        color: "#00b5e2",
+        color: "#ffd700",
         showInLegend: true,
         legendText: "Service Calls",
         dataPoints: [

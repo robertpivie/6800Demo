@@ -17,7 +17,7 @@ function History() {
     data: [
       {
         type: "line",
-        color: "#ff5e00",
+        color: "#63666a",
         markerType: "none",
         dataPoints: [
           {
@@ -55,7 +55,7 @@ function History() {
       },
       {
         type: "column",
-        color: "#00b5e2",
+        color: "#63666a",
         showInLegend: true,
         legendText: "Leads",
         dataPoints: [

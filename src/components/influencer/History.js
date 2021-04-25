@@ -19,7 +19,7 @@ function History() {
           {
             label: "Mo",
             y: 25,
-            indexLabel: "Deliveries Goals",
+            indexLabel: "Influence Goals",
             indexLabelOrientation: "vertical",
           },
           { label: "Tu", y: 25 },
@@ -32,7 +32,7 @@ function History() {
         type: "column",
         color: "#00b5e2",
         showInLegend: true,
-        legendText: "Deliveries",
+        legendText: "Influences",
         dataPoints: [
           { label: "Mo", y: 10 },
           { label: "Tu", y: 15 },

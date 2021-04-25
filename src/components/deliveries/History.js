@@ -13,13 +13,13 @@ function History() {
     data: [
       {
         type: "line",
-        color: "#ff5e00",
+        color: "#004f71",
         markerType: "none",
         dataPoints: [
           {
             label: "Mo",
             y: 25,
-            indexLabel: "Influencer Goals",
+            indexLabel: "Delivery Goals",
             indexLabelOrientation: "vertical",
           },
           { label: "Tu", y: 25 },
@@ -30,9 +30,9 @@ function History() {
       },
       {
         type: "column",
-        color: "#00b5e2",
+        color: "#ff5e00",
         showInLegend: true,
-        legendText: "Influences",
+        legendText: "Deliveries",
         dataPoints: [
           { label: "Mo", y: 10 },
           { label: "Tu", y: 15 },
