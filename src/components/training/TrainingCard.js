@@ -14,7 +14,9 @@ function TrainingCard({ data }) {
           <Col>{views} Views</Col>
         </Row>
         <Row>
-          <Col>${donations} in donations</Col>
+          <Col>
+            <span className="text-primary">${donations} in donations</span>
+          </Col>
         </Row>
       </Card.Footer>
     </Card>
