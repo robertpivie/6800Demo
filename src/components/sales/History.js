@@ -2,6 +2,7 @@ import { CanvasJSChart } from "canvasjs-react-charts";
 
 function History() {
   const options = {
+    animationEnabled: true,
     axisX: {
       gridThickness: 0,
       tickThickness: 0,
@@ -18,73 +19,44 @@ function History() {
       {
         type: "line",
         color: "#63666a",
-        markerType: "none",
+        showInLegend: true,
+        legendText: "Conversions",
         dataPoints: [
-          {
-            label: "Mo",
-            y: 25,
-            indexLabel: "Leads Goal",
-            indexLabelOrientation: "vertical",
-          },
-          { label: "Tu", y: 25 },
-          { label: "We", y: 25 },
-          { label: "Th", y: 25 },
-          { label: "Fr", y: 25 },
+          { label: "Jan", y: 15 },
+          { label: "Feb", y: 25 },
+          { label: "Mar", y: 30 },
+          { label: "Apr", y: 28 },
         ],
       },
       {
         type: "line",
-        color: "#ff5e00",
-        markerType: "none",
-        axisYType: "secondary",
-        dataPoints: [
-          {
-            label: "Mo",
-            y: 5,
-          },
-          { label: "Tu", y: 5 },
-          { label: "We", y: 5 },
-          { label: "Th", y: 5 },
-          {
-            label: "Fr",
-            y: 5,
-            indexLabel: "Opportunities Goal",
-            indexLabelOrientation: "vertical",
-          },
-        ],
-      },
-      {
-        type: "column",
-        color: "#63666a",
-        showInLegend: true,
-        legendText: "Leads",
-        dataPoints: [
-          { label: "Mo", y: 10 },
-          { label: "Tu", y: 15 },
-          { label: "We", y: 25 },
-          { label: "Th", y: 30 },
-          { label: "Fr", y: 28 },
-        ],
-      },
-      {
-        type: "column",
         color: "#c4d600",
         showInLegend: true,
-        legendText: "Opportunities",
-        axisYType: "secondary",
+        legendText: "Sales",
         dataPoints: [
-          { label: "Mo", y: 5 },
-          { label: "Tu", y: 5 },
-          { label: "We", y: 6 },
-          { label: "Th", y: 9 },
-          { label: "Fr", y: 7 },
+          { label: "Jan", y: 5 },
+          { label: "Feb", y: 6 },
+          { label: "Mar", y: 9 },
+          { label: "Apr", y: 7 },
+        ],
+      },
+      {
+        type: "line",
+        color: "#bbbcbc",
+        showInLegend: true,
+        legendText: "Returns",
+        dataPoints: [
+          { label: "Jan", y: 5 },
+          { label: "Feb", y: 3 },
+          { label: "Mar", y: 2 },
+          { label: "Apr", y: 2 },
         ],
       },
     ],
   };
   return (
     <div>
-      <h4>My Progress</h4>
+      <h6>My Progress</h6>
       <CanvasJSChart options={options} />
     </div>
   );

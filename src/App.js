@@ -37,47 +37,47 @@ function App() {
             <br />
             <Switch>
               <Route exact path="/">
-                <h1>Sign Up</h1>
+                <h2 style={{ textAlign: "center" }}>Sign Up</h2>
                 <br />
                 <GetStarted />
               </Route>
               <Route exact path="/welcome">
-                <h1>Welcome</h1>
+                <h2 style={{ textAlign: "center" }}>Thank You!</h2>
                 <br />
                 <Welcome />
               </Route>
               <Route exact path="/interests">
-                <h1>My Interests</h1>
+                <h2 style={{ textAlign: "center" }}>Interests</h2>
                 <br />
                 <Interests />
               </Route>
               <Route exact path="/landing">
-                <h1>Let's Get to Work!</h1>
+                <h2 style={{ textAlign: "center" }}>Let's Get to Work!</h2>
                 <br />
                 <Landing />
               </Route>
               <Route exact path="/delivery">
-                <h1>My Deliveries</h1>
+                <h2 style={{ textAlign: "center" }}>Deliveries Dashboard</h2>
                 <br />
                 <Delivery></Delivery>
               </Route>
               <Route exact path="/sales">
-                <h1>My Sales</h1>
+                <h2 style={{ textAlign: "center" }}>Sales Dashboard</h2>
                 <br />
                 <Sales></Sales>
               </Route>
               <Route exact path="/service">
-                <h1>My Service</h1>
+                <h2 style={{ textAlign: "center" }}>Service Dashboard</h2>
                 <br />
                 <Service></Service>
               </Route>
               <Route exact path="/training">
-                <h1>My Training</h1>
+                <h2 style={{ textAlign: "center" }}>Training Dashboard</h2>
                 <br />
                 <Training></Training>
               </Route>
               <Route exact path="/influence">
-                <h1>My Influence</h1>
+                <h2 style={{ textAlign: "center" }}>Influencer Dashboard</h2>
                 <br />
                 <Influence></Influence>
               </Route>

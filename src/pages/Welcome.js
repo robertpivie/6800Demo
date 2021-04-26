@@ -1,25 +1,54 @@
+import { Fragment } from "react";
 import "./Interests.css";
-import logo from "../logo.png";
-import Button from "react-bootstrap/Button";
-import Row from "react-bootstrap/Row";
-import Col from "react-bootstrap/Col";
-import Image from "react-bootstrap/Image";
-import Container from "react-bootstrap/Container";
+import { Button, Card } from "react-bootstrap";
+import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
+import { faCheckCircle } from "@fortawesome/free-solid-svg-icons";
 
 function Interests() {
   return (
-    <Container>
-      <Row>
-        <Col xs={12}>
-          <Image src={logo} fluid />
-        </Col>
-      </Row>
-      <Row>
-        <Button href="/interests" variant="primary" size="lg" block>
-          Pick My Interests
-        </Button>
-      </Row>
-    </Container>
+    <Fragment>
+      <br />
+      <Card
+        style={{
+          border: "3px solid #63666a",
+          boxShadow: "3px 3px #c4d600",
+        }}
+      >
+        <Card.Body>
+          <br />
+          <br />
+          <p
+            style={{
+              display: "flex",
+              justifyContent: "center",
+            }}
+          >
+            <FontAwesomeIcon
+              className="text-success"
+              size="6x"
+              icon={faCheckCircle}
+            />
+          </p>
+          <br />
+          <p
+            style={{
+              display: "flex",
+              justifyContent: "center",
+            }}
+          >
+            <h6 className="text-muted">Registration Completed!</h6>
+          </p>
+        </Card.Body>
+      </Card>
+      <br />
+      <br />
+      <br />
+      <br />
+      <br />
+      <Button href="/landing" variant="primary" size="lg" block>
+        Continue
+      </Button>
+    </Fragment>
   );
 }
 

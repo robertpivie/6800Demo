@@ -4,7 +4,7 @@ import { Table } from "react-bootstrap";
 function Leads() {
   return (
     <Fragment>
-      <h4>My Leads</h4>
+      <h6>My Leads</h6>
       <Table hover responsive="sm" size="sm">
         <thead>
           <tr>

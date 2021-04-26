@@ -4,7 +4,7 @@ import { Table } from "react-bootstrap";
 function Opportunities() {
   return (
     <Fragment>
-      <h4>My Opportunities</h4>
+      <h6>My Opportunities</h6>
       <Table hover responsive="sm" size="sm">
         <thead>
           <tr>

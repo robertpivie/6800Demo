@@ -2,6 +2,7 @@ import { CanvasJSChart } from "canvasjs-react-charts";
 
 function History() {
   const options = {
+    animationEnabled: true,
     axisX: {
       gridThickness: 0,
       tickThickness: 0,
@@ -45,7 +46,7 @@ function History() {
   };
   return (
     <div>
-      <h4>My Progress</h4>
+      <h6>My Progress</h6>
       <CanvasJSChart options={options} />
     </div>
   );

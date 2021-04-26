@@ -45,7 +45,7 @@ function History() {
   };
   return (
     <div>
-      <h4>My Progress</h4>
+      <h6>My Progress</h6>
       <CanvasJSChart options={options} />
     </div>
   );

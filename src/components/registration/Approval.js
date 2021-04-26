@@ -5,7 +5,7 @@ function Approval() {
     <Form.Check controlId="formBasicCheckbox">
       <Form.Check.Input type="checkbox" />
       <Form.Check.Label>
-        I approve the necessary use of this information.
+        <small>I approve the necessary use of this information.</small>
       </Form.Check.Label>
     </Form.Check>
   );

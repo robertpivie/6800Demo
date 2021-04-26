@@ -21,7 +21,7 @@ import Approval from "../components/registration/Approval";
 
 function Interests() {
   return (
-    <Accordion defaultActiveKey="0">
+    <Accordion>
       <Container>
         <Row>
           <Col xs={12} className="mt-3">
@@ -29,7 +29,7 @@ function Interests() {
               className="btn btn-outline-danger btn-block"
               eventKey="0"
             >
-              <h4>Delivery</h4>
+              <h6>Delivery</h6>
               <FontAwesomeIcon size="4x" icon={faShippingFast} />
             </Accordion.Toggle>
             <Accordion.Collapse eventKey="0">
@@ -41,7 +41,7 @@ function Interests() {
               className="btn btn-outline-warning btn-block"
               eventKey="1"
             >
-              <h4>Service</h4>
+              <h6>Service</h6>
               <FontAwesomeIcon size="4x" icon={faHeadset} />
             </Accordion.Toggle>
             <Accordion.Collapse eventKey="1">
@@ -53,7 +53,7 @@ function Interests() {
               className="btn btn-outline-success btn-block"
               eventKey="2"
             >
-              <h4>Sales</h4>
+              <h6>Sales</h6>
               <FontAwesomeIcon size="4x" icon={faMoneyBill} />
             </Accordion.Toggle>
             <Accordion.Collapse eventKey="2">
@@ -65,7 +65,7 @@ function Interests() {
               className="btn btn-outline-primary btn-block"
               eventKey="3"
             >
-              <h4>Training</h4>
+              <h6>Training</h6>
               <FontAwesomeIcon size="4x" icon={faChalkboardTeacher} />
             </Accordion.Toggle>
             <Accordion.Collapse eventKey="3">
@@ -77,7 +77,7 @@ function Interests() {
               className="btn btn-outline-info btn-block"
               eventKey="4"
             >
-              <h4>Influencer</h4>
+              <h6>Influencer</h6>
               <FontAwesomeIcon size="4x" icon={faTv} />
             </Accordion.Toggle>
             <Accordion.Collapse eventKey="4">
@@ -90,8 +90,8 @@ function Interests() {
           <Col xs={12}>
             <Approval></Approval>
             <br />
-            <Button href="/landing" variant="primary" size="lg" block>
-              I'm Done
+            <Button href="/welcome" variant="primary" size="lg" block>
+              Done
             </Button>
           </Col>
         </Row>
