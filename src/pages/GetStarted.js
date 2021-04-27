@@ -33,7 +33,7 @@ function GetStarted() {
         </small>
       </Form.Check>
       <br />
-      <Button href="/welcome" variant="primary" size="lg" block>
+      <Button href="/interests" variant="primary" size="lg" block>
         Get Started
       </Button>
       <br />
@@ -50,7 +50,7 @@ function GetStarted() {
       </Row>
       <br />
       <Button
-        href="/welcome"
+        href="/interests"
         variant="dark"
         size="lg"
         block
@@ -71,7 +71,7 @@ function GetStarted() {
         </span>
       </Button>
       <Button
-        href="/welcome"
+        href="/interests"
         variant="dark"
         size="lg"
         block
