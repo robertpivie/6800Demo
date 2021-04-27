@@ -13,6 +13,10 @@ import Service from "./pages/Service";
 import Sales from "./pages/Sales";
 import Training from "./pages/Training";
 import Influence from "./pages/Influence";
+import Stories from "./pages/Stories";
+import { Nav, NavDropdown } from "react-bootstrap";
+import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
+import { faLock } from "@fortawesome/free-solid-svg-icons";
 
 function App() {
   return (
@@ -28,6 +32,26 @@ function App() {
           />{" "}
           Nu
         </Navbar.Brand>
+        <Navbar.Toggle aria-controls="basic-navbar-nav" />
+        <Navbar.Collapse id="basic-navbar-nav">
+          <Nav className="ml-auto">
+            <NavDropdown title="Dashboards" id="basic-nav-dropdown">
+              <NavDropdown.Item href="/delivery">Delivery</NavDropdown.Item>
+              <NavDropdown.Divider />
+              <NavDropdown.Item href="/service">Service</NavDropdown.Item>
+              <NavDropdown.Divider />
+              <NavDropdown.Item href="/sales">Sales</NavDropdown.Item>
+              <NavDropdown.Divider />
+              <NavDropdown.Item href="/training">Training</NavDropdown.Item>
+              <NavDropdown.Divider />
+              <NavDropdown.Item href="/influence">Influencer</NavDropdown.Item>
+            </NavDropdown>
+            <Nav.Link href="/stories">Stories</Nav.Link>
+            <Nav.Link href="/">
+              <FontAwesomeIcon icon={faLock} />
+            </Nav.Link>
+          </Nav>
+        </Navbar.Collapse>
       </Navbar>
       <Container>
         <Row className="justify-content-md-center">
@@ -80,6 +104,11 @@ function App() {
                 <h2 style={{ textAlign: "center" }}>Influencer Dashboard</h2>
                 <br />
                 <Influence></Influence>
+              </Route>
+              <Route exact path="/stories">
+                <h2 style={{ textAlign: "center" }}>Success Stories</h2>
+                <br />
+                <Stories></Stories>
               </Route>
             </Switch>
           </Col>

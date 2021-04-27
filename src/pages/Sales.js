@@ -1,4 +1,5 @@
 import { Fragment } from "react";
+import { Card } from "react-bootstrap";
 import Earnings from "../components/sales/Earnings";
 import History from "../components/sales/History";
 import Leads from "../components/sales/Leads";
@@ -10,12 +11,12 @@ function Sales() {
     <Fragment>
       <Ratios />
       <br />
+      <Card>
+        <Leads />
+        <Opportunities />
+      </Card>
+      <br />
       <Earnings />
-      <br />
-      <Leads />
-      <Opportunities />
-      <br />
-      <hr />
       <br />
       <History />
     </Fragment>

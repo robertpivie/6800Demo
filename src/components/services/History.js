@@ -2,50 +2,59 @@ import { CanvasJSChart } from "canvasjs-react-charts";
 
 function History() {
   const options = {
+    animationEnabled: true,
     axisX: {
-      gridThickness: 0,
+      gridThickness: 0.5,
       tickThickness: 0,
+      lineThickness: 0,
     },
     axisY: {
       gridThickness: 0,
       tickThickness: 0,
+      lineThickness: 0,
     },
     data: [
       {
         type: "line",
-        color: "#ff5e00",
-        markerType: "none",
+        color: "#63666a",
+        showInLegend: true,
+        legendText: "Open",
         dataPoints: [
-          {
-            label: "Mo",
-            y: 25,
-            indexLabel: "Service Goal",
-            indexLabelOrientation: "vertical",
-          },
-          { label: "Tu", y: 25 },
-          { label: "We", y: 25 },
-          { label: "Th", y: 25 },
-          { label: "Fr", y: 25 },
+          { label: "Jan", y: 15 },
+          { label: "Feb", y: 25 },
+          { label: "Mar", y: 30 },
+          { label: "Apr", y: 28 },
         ],
       },
       {
-        type: "column",
-        color: "#ffd700",
+        type: "line",
+        color: "#c4d600",
         showInLegend: true,
-        legendText: "Service Calls",
+        legendText: "Closed",
         dataPoints: [
-          { label: "Mo", y: 10 },
-          { label: "Tu", y: 15 },
-          { label: "We", y: 25 },
-          { label: "Th", y: 30 },
-          { label: "Fr", y: 28 },
+          { label: "Jan", y: 5 },
+          { label: "Feb", y: 6 },
+          { label: "Mar", y: 9 },
+          { label: "Apr", y: 7 },
+        ],
+      },
+      {
+        type: "line",
+        color: "#bbbcbc",
+        showInLegend: true,
+        legendText: "Escalated",
+        dataPoints: [
+          { label: "Jan", y: 5 },
+          { label: "Feb", y: 3 },
+          { label: "Mar", y: 2 },
+          { label: "Apr", y: 2 },
         ],
       },
     ],
   };
   return (
     <div>
-      <h6>My Progress</h6>
+      <h6>Cases Report</h6>
       <CanvasJSChart options={options} />
     </div>
   );

@@ -1,6 +1,7 @@
 import { CanvasJSChart } from "canvasjs-react-charts";
 
-function Ratio({ data }) {
+function Ratio({ ratioId, data }) {
+  console.log(ratioId);
   const options = {
     animationEnabled: true,
 
@@ -12,7 +13,7 @@ function Ratio({ data }) {
   };
   return (
     <CanvasJSChart
-      id={new Date().getTime()}
+      chartContainerId={ratioId}
       containerProps={{
         height: "100px",
       }}
